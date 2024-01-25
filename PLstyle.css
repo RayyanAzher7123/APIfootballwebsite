@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+#header{
+    
+    width: 100%;
+    height:50vh;
+    background-size: contain ;
+    background-position:right center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width:170px;
+
+}
+nav ul li{
+    
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: purple;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.table{
+    padding: 10px 10%;
+
+}
+h1.sub-title {
+    color: #333;
+}
+.container{
+    background: beige;
+    padding: 10px 10%;
+
+}
+.sub-title{
+    font-size:60px;
+    font-weight:600;
+    color:#fff;
+
+}
+#big6{
+    padding: 50px 0;
+}
+.teams-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:50px;
+
+}
+.team{
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.team img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+.layer{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight:500;
+    margin-bottom: 20px;
+    font-size: large;
+}
+.layer a{
+    margin-top: 20px;
+    color:#ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.team:hover img{
+    transform: scale(1.1);
+}
+.team:hover .layer{
+    height: 100%;
+}
+
+.live-premier-league-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.live-premier-league-table th,
+.live-premier-league-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.live-premier-league-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.live-premier-league-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.live-premier-league-table tr:hover {
+    background-color: #ddd;
+}
+fixtures-results-container {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fixtures-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fixtures-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+
+.toggle-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-button:hover {
+    background-color: #2980b9;
+}

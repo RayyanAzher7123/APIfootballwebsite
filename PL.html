@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href = "PLstyle.css">
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Premier League</title>
+    <script src="myscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1cd08c634c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">La Liga</a></li>
+                    <li><a href="#">Champions League</a></li>
+                    
+                    
+                </ul>
+
+            </nav>
+            
+        </div>
+
+        <div id="big6">
+            <div class="container">
+                <h1 class="sub-title">THE BIG 6 OF THE PREMIER LEAGUE</h1>
+                <div class="teams-list">
+                    <div class="team">
+                        <img src="images/arsenal_logo.png">
+                        <div class="layer">
+                            <a href="https://www.arsenal.com/"><i class="fa-solid fa-futbol"></i></a>
+                            <h3>Arsenal</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="team">
+                        <img src="images/liverpool_logo.png">
+                        <div class="layer">
+                        <a href="https://www.liverpoolfc.com/"><i class="fa-solid fa-futbol"></i></a>
+                        <h3>Liverpool</h3>
+                        
+                    </div>
+                    </div>
+                    <div class="team">
+                        <img src="images/Manchester United_logo.png">
+                        <div class="layer">
+                            <a href="https://www.manutd.com/"><i class="fa-solid fa-futbol"></i></a>
+                            <h3>Manchester United</h3>
+                           
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    <div id="live-premier-league-standings">
+    <div class="table">
+        <h1 class="sub-title">Live Premier League Standings</h1>
+        <div id="live-standings-container"></div>
+    </div>
+    <div id="live-matches-container"></div>
+    <div id="fixtures-results">
+        <div id="results-container" class="fixtures-results-container">
+            <h1 class="sub-title">Results</h1>
+            <ul id="results-list" class="fixtures-list"></ul>
+            <button id="toggle-results" class="toggle-button">Show All Results</button>
+        </div>
+        <div id="fixtures-container" class="fixtures-results-container">
+            <h1 class="sub-title">Fixtures</h1>
+            <ul id="fixtures-list" class="fixtures-list"></ul>
+            <button id="toggle-fixtures" class="toggle-button">Show All Fixtures</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
